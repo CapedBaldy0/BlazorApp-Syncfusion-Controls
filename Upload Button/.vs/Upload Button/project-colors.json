@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5107b84f-e34a-4f4a-a340-7f7447cd1d25": {
+      "ProjectGuid": "5107b84f-e34a-4f4a-a340-7f7447cd1d25",
+      "DisplayName": "Upload Button",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

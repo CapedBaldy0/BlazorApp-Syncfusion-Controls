@@ -1,0 +1,37 @@
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\appsettings.Development.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\appsettings.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Upload Button.staticwebassets.runtime.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Upload Button.exe
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Upload Button.deps.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Upload Button.runtimeconfig.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Upload Button.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\ref\Upload Button.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Upload Button.pdb
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Buttons.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Core.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Data.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Inputs.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Popups.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Spinner.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.SplitButtons.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Themes.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Licensing.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.csproj.AssemblyReference.cache
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.AssemblyInfoInputs.cache
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.AssemblyInfo.cs
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.csproj.CoreCompileInputs.cache
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.MvcApplicationPartsAssemblyInfo.cache
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.RazorAssemblyInfo.cache
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.RazorAssemblyInfo.cs
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\staticwebassets.build.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\staticwebassets.development.json
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\scopedcss\bundle\Upload Button.styles.css
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\scopedcss\projectbundle\Upload Button.bundle.scp.css
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.csproj.CopyComplete
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\ref\Upload Button.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.pdb
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.genruntimeconfig.cache
