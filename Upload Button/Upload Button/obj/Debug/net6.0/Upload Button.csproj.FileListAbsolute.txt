@@ -35,3 +35,6 @@ D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Bu
 D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\ref\Upload Button.dll
 D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.pdb
 D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\obj\Debug\net6.0\Upload Button.genruntimeconfig.cache
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Calendars.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Lists.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.DropDowns.dll

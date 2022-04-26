@@ -19,6 +19,9 @@
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.popups\20.1.0.50\buildTransitive\Syncfusion.Blazor.Popups.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.popups\20.1.0.50\buildTransitive\Syncfusion.Blazor.Popups.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.splitbuttons\20.1.0.50\buildTransitive\Syncfusion.Blazor.SplitButtons.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.splitbuttons\20.1.0.50\buildTransitive\Syncfusion.Blazor.SplitButtons.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.data\20.1.0.50\buildTransitive\Syncfusion.Blazor.Data.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.data\20.1.0.50\buildTransitive\Syncfusion.Blazor.Data.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.lists\20.1.0.50\buildTransitive\Syncfusion.Blazor.Lists.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.lists\20.1.0.50\buildTransitive\Syncfusion.Blazor.Lists.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.inputs\20.1.0.50\buildTransitive\Syncfusion.Blazor.Inputs.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.inputs\20.1.0.50\buildTransitive\Syncfusion.Blazor.Inputs.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.dropdowns\20.1.0.50\buildTransitive\Syncfusion.Blazor.DropDowns.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.dropdowns\20.1.0.50\buildTransitive\Syncfusion.Blazor.DropDowns.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.calendars\20.1.0.50\buildTransitive\Syncfusion.Blazor.Calendars.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.calendars\20.1.0.50\buildTransitive\Syncfusion.Blazor.Calendars.props')" />
   </ImportGroup>
 </Project>

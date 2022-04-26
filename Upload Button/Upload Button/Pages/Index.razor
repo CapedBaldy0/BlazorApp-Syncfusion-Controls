@@ -1,7 +1,109 @@
 ﻿@page "/"
+@using Syncfusion.Blazor.Calendars
 
-<SfUploader AllowMultiple="true"></SfUploader>
-<SfColorPicker></SfColorPicker>
-<SfSlider TValue="Action"></SfSlider>
-<SfTextBox></SfTextBox>
-<SfSignature></SfSignature>
+<div class="row">
+  <div class="column">
+      <div class="flex-container 1">
+
+    <div class="flex-child unu">
+    <label>Дата начала</label>
+    <SfDatePicker TValue="DateTime?" Placeholder="Choose a Date" > </SfDatePicker>
+</div>
+
+<div class="flex-child doi">
+    <label>Дата конца</label>
+    <SfDatePicker TValue="DateTime?" Placeholder="Choose a Date" > </SfDatePicker>
+</div>
+
+<div class="flex-child trei">
+    <label>Yслуга</label>
+    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+    </SfComboBox>
+</div>
+
+<div class="flex-child patru">
+    <SfCheckBox TChecked="bool"  Label="с субдилерами" Checked="false"></SfCheckBox>
+</div>
+
+<div class="flex-child cinci">
+    <label>точика</label>
+    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+    </SfComboBox>
+</div>
+
+<div class="flex-child sase">
+    <label>полициатели</label>
+    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+    </SfComboBox>
+</div>
+
+</div>
+
+<div class="flex-container 2">
+
+<div class="flex-child sapte">
+    <SfCheckBox TChecked="bool"  Label="с точностью до часа" Checked="false"></SfCheckBox>
+    <SfCheckBox TChecked="bool"  Label="разб. дату конца " Checked="false"></SfCheckBox>
+</div>
+
+<div class="flex-child opt">
+    <label>статус</label>
+    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+    </SfComboBox>
+</div>
+
+<div class="flex-child noua">
+    <label>Id/Number/Account платежа</label>
+    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+    </SfComboBox>
+</div>
+
+<div class="flex-child zece">
+    <SfCheckBox TChecked="bool"  Label="по времени статуса" Checked="false"></SfCheckBox>
+
+    <SfCheckBox TChecked="bool"  Label="не выгружать атрибуты" Checked="false"></SfCheckBox>
+
+    <SfCheckBox TChecked="bool"  Label="по типу платежа" Checked="false"></SfCheckBox>
+</div>
+</div>
+  </div>
+  <div class="column"></div>
+</div>
+
+
+
+
+<style>
+
+    .row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+    .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.flex-child {
+    flex: 1;
+    margin-left: 20px;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.flex-child:last-child {
+    margin-right: 20px;
+}
+
+</style>

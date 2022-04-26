@@ -170,6 +170,27 @@
           "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {}
         }
       },
+      "Syncfusion.Blazor.Calendars/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "20.1.0.50",
+          "Syncfusion.Blazor.Core": "20.1.0.50",
+          "Syncfusion.Blazor.Inputs": "20.1.0.50",
+          "Syncfusion.Blazor.Lists": "20.1.0.50"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Calendars.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Calendars.props": {}
+        }
+      },
       "Syncfusion.Blazor.Core/20.1.0.50": {
         "type": "package",
         "dependencies": {
@@ -209,6 +230,28 @@
           "buildMultiTargeting/Syncfusion.Blazor.Data.props": {}
         }
       },
+      "Syncfusion.Blazor.DropDowns/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "20.1.0.50",
+          "Syncfusion.Blazor.Core": "20.1.0.50",
+          "Syncfusion.Blazor.Data": "20.1.0.50",
+          "Syncfusion.Blazor.Inputs": "20.1.0.50",
+          "Syncfusion.Blazor.Spinner": "20.1.0.50"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.DropDowns.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props": {}
+        }
+      },
       "Syncfusion.Blazor.Inputs/20.1.0.50": {
         "type": "package",
         "dependencies": {
@@ -229,6 +272,26 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Syncfusion.Blazor.Inputs.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Lists/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "20.1.0.50",
+          "Syncfusion.Blazor.Core": "20.1.0.50",
+          "Syncfusion.Blazor.Data": "20.1.0.50"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Lists.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Lists.props": {}
         }
       },
       "Syncfusion.Blazor.Popups/20.1.0.50": {
@@ -728,6 +791,34 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.Blazor.Calendars/20.1.0.50": {
+      "sha512": "dKw+ZSqokA/D4sZZgABILJZ2P3LhkG3y7gFK2/2NdCFz4G30li3RfynyC2HCkq76RA8QRtjYwA90LgJqAo/nmA==",
+      "type": "package",
+      "path": "syncfusion.blazor.calendars/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Calendars.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Calendars.props",
+        "buildTransitive/Syncfusion.Blazor.Calendars.props",
+        "lib/net5.0/Syncfusion.Blazor.Calendars.dll",
+        "lib/net5.0/Syncfusion.Blazor.Calendars.xml",
+        "lib/net6.0/Syncfusion.Blazor.Calendars.dll",
+        "lib/net6.0/Syncfusion.Blazor.Calendars.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.Calendars.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Calendars.xml",
+        "staticwebassets/scripts/sf-calendarbase-dc8eab.min.js",
+        "staticwebassets/scripts/sf-datepicker-dc8eab.min.js",
+        "staticwebassets/scripts/sf-daterangepicker-dc8eab.min.js",
+        "staticwebassets/scripts/sf-timepicker-dc8eab.min.js",
+        "syncfusion.blazor.calendars.20.1.0.50.nupkg.sha512",
+        "syncfusion.blazor.calendars.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Blazor.Core/20.1.0.50": {
       "sha512": "DmPpgux0aGgKAB1bHBDz4SZUC5rviLK5q9DQnK/vB+uVvc7CR1tXHygoENdqIjcQ4ecXYpfZKujEoEspPEyfWA==",
       "type": "package",
@@ -789,6 +880,34 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.Blazor.DropDowns/20.1.0.50": {
+      "sha512": "HLASYLjnxZdiur29Z1pKslSTLxT0zeq0z7FxI0syCFdu3P+aka887dPETJWjCvzL0UCOsKhJTfJKMaHNgtfnKw==",
+      "type": "package",
+      "path": "syncfusion.blazor.dropdowns/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.DropDowns.props",
+        "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props",
+        "buildTransitive/Syncfusion.Blazor.DropDowns.props",
+        "lib/net5.0/Syncfusion.Blazor.DropDowns.dll",
+        "lib/net5.0/Syncfusion.Blazor.DropDowns.xml",
+        "lib/net6.0/Syncfusion.Blazor.DropDowns.dll",
+        "lib/net6.0/Syncfusion.Blazor.DropDowns.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.DropDowns.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.DropDowns.xml",
+        "staticwebassets/scripts/sf-dropdownlist-dc8eab.min.js",
+        "staticwebassets/scripts/sf-listbox-dc8eab.min.js",
+        "staticwebassets/scripts/sf-multiselect-dc8eab.min.js",
+        "staticwebassets/scripts/sortable-dc8eab.min.js",
+        "syncfusion.blazor.dropdowns.20.1.0.50.nupkg.sha512",
+        "syncfusion.blazor.dropdowns.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Blazor.Inputs/20.1.0.50": {
       "sha512": "QVHyJeByxpu8PybNqFFHP3WdLyt+Cum1bvIJG/3UFBqQksxwgaN3zz4rhO4I2oARKnU9B4jgsLCW1DITxxgH/w==",
       "type": "package",
@@ -817,6 +936,31 @@
         "staticwebassets/scripts/sf-uploader-dc8eab.min.js",
         "syncfusion.blazor.inputs.20.1.0.50.nupkg.sha512",
         "syncfusion.blazor.inputs.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Blazor.Lists/20.1.0.50": {
+      "sha512": "5HOy1h0I71Irwp3uVrmIvSHzIlYyNWjaP7uefjOFRMsi6xT7FKp+u7ytABm0LXSmTrmsbuVTcaSJ2FxxnnbwhA==",
+      "type": "package",
+      "path": "syncfusion.blazor.lists/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Lists.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Lists.props",
+        "buildTransitive/Syncfusion.Blazor.Lists.props",
+        "lib/net5.0/Syncfusion.Blazor.Lists.dll",
+        "lib/net5.0/Syncfusion.Blazor.Lists.xml",
+        "lib/net6.0/Syncfusion.Blazor.Lists.dll",
+        "lib/net6.0/Syncfusion.Blazor.Lists.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.Lists.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Lists.xml",
+        "staticwebassets/scripts/sf-listview-dc8eab.min.js",
+        "syncfusion.blazor.lists.20.1.0.50.nupkg.sha512",
+        "syncfusion.blazor.lists.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -1102,6 +1246,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Syncfusion.Blazor.Buttons >= 20.1.0.50",
+      "Syncfusion.Blazor.Calendars >= 20.1.0.50",
+      "Syncfusion.Blazor.DropDowns >= 20.1.0.50",
       "Syncfusion.Blazor.Inputs >= 20.1.0.50",
       "Syncfusion.Blazor.Themes >= 20.1.0.50"
     ]
@@ -1145,6 +1292,18 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Syncfusion.Blazor.Buttons": {
+            "target": "Package",
+            "version": "[20.1.0.50, )"
+          },
+          "Syncfusion.Blazor.Calendars": {
+            "target": "Package",
+            "version": "[20.1.0.50, )"
+          },
+          "Syncfusion.Blazor.DropDowns": {
+            "target": "Package",
+            "version": "[20.1.0.50, )"
+          },
           "Syncfusion.Blazor.Inputs": {
             "target": "Package",
             "version": "[20.1.0.50, )"
