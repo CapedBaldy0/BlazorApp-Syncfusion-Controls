@@ -38,3 +38,7 @@ D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Bu
 D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Calendars.dll
 D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Lists.dll
 D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.DropDowns.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Navigations.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.Blazor.Grids.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.ExcelExport.Net.dll
+D:\Work\Practice\SyncfusionControls Test\BlazorApp-Syncfusion-Controls\Upload Button\Upload Button\bin\Debug\net6.0\Syncfusion.PdfExport.Net.dll

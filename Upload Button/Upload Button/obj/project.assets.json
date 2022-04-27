@@ -158,6 +158,30 @@
           "lib/net6.0/Microsoft.JSInterop.dll": {}
         }
       },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Syncfusion.Blazor.Buttons/20.1.0.50": {
         "type": "package",
         "dependencies": {
@@ -252,6 +276,34 @@
           "buildMultiTargeting/Syncfusion.Blazor.DropDowns.props": {}
         }
       },
+      "Syncfusion.Blazor.Grid/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "20.1.0.50",
+          "Syncfusion.Blazor.Calendars": "20.1.0.50",
+          "Syncfusion.Blazor.Core": "20.1.0.50",
+          "Syncfusion.Blazor.Data": "20.1.0.50",
+          "Syncfusion.Blazor.DropDowns": "20.1.0.50",
+          "Syncfusion.Blazor.Inputs": "20.1.0.50",
+          "Syncfusion.Blazor.Navigations": "20.1.0.50",
+          "Syncfusion.Blazor.Popups": "20.1.0.50",
+          "Syncfusion.Blazor.Spinner": "20.1.0.50",
+          "Syncfusion.ExcelExport.Net.Core": "20.1.0.50",
+          "Syncfusion.PdfExport.Net.Core": "20.1.0.50"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Grid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Grid.props": {}
+        }
+      },
       "Syncfusion.Blazor.Inputs/20.1.0.50": {
         "type": "package",
         "dependencies": {
@@ -292,6 +344,30 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Syncfusion.Blazor.Lists.props": {}
+        }
+      },
+      "Syncfusion.Blazor.Navigations/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Blazor.Buttons": "20.1.0.50",
+          "Syncfusion.Blazor.Core": "20.1.0.50",
+          "Syncfusion.Blazor.Data": "20.1.0.50",
+          "Syncfusion.Blazor.Inputs": "20.1.0.50",
+          "Syncfusion.Blazor.Lists": "20.1.0.50",
+          "Syncfusion.Blazor.Popups": "20.1.0.50",
+          "Syncfusion.Blazor.Spinner": "20.1.0.50"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {}
+        },
+        "build": {
+          "buildTransitive/Syncfusion.Blazor.Navigations.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Syncfusion.Blazor.Navigations.props": {}
         }
       },
       "Syncfusion.Blazor.Popups/20.1.0.50": {
@@ -367,6 +443,18 @@
           "buildMultiTargeting/Syncfusion.Blazor.Themes.props": {}
         }
       },
+      "Syncfusion.ExcelExport.Net.Core/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
+        }
+      },
       "Syncfusion.Licensing/20.1.0.50": {
         "type": "package",
         "compile": {
@@ -374,6 +462,18 @@
         },
         "runtime": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.PdfExport.Net.Core/20.1.0.50": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
         }
       },
       "System.IO.Pipelines/6.0.0": {
@@ -771,6 +871,151 @@
         "microsoft.jsinterop.nuspec"
       ]
     },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "type": "package",
+      "path": "netstandard.library/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "build/netstandard2.0/ref/netstandard.xml",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.nuspec"
+      ]
+    },
     "Syncfusion.Blazor.Buttons/20.1.0.50": {
       "sha512": "oeNbpfz0aUt+ER4VjUPoxgYBJiI4pl8IQKe6v74gWDw4Jy+9NHQJ4+xbtjqTLIw+TAFEN5tYvCjGZDglt9U6Hg==",
       "type": "package",
@@ -908,6 +1153,31 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.Blazor.Grid/20.1.0.50": {
+      "sha512": "B2G1aA3AOqB2fSXNOzDitnB7+Qnd+RrX6jQYBxLnSYjxOaW/lM2IwPknB1ZrjsHeNYssEp/HWUUX7M90AB7KNA==",
+      "type": "package",
+      "path": "syncfusion.blazor.grid/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Grid.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Grid.props",
+        "buildTransitive/Syncfusion.Blazor.Grid.props",
+        "lib/net5.0/Syncfusion.Blazor.Grids.dll",
+        "lib/net5.0/Syncfusion.Blazor.Grids.xml",
+        "lib/net6.0/Syncfusion.Blazor.Grids.dll",
+        "lib/net6.0/Syncfusion.Blazor.Grids.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.Grids.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Grids.xml",
+        "staticwebassets/scripts/sf-grid-dc8eab.min.js",
+        "syncfusion.blazor.grid.20.1.0.50.nupkg.sha512",
+        "syncfusion.blazor.grid.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Blazor.Inputs/20.1.0.50": {
       "sha512": "QVHyJeByxpu8PybNqFFHP3WdLyt+Cum1bvIJG/3UFBqQksxwgaN3zz4rhO4I2oARKnU9B4jgsLCW1DITxxgH/w==",
       "type": "package",
@@ -961,6 +1231,39 @@
         "staticwebassets/scripts/sf-listview-dc8eab.min.js",
         "syncfusion.blazor.lists.20.1.0.50.nupkg.sha512",
         "syncfusion.blazor.lists.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Blazor.Navigations/20.1.0.50": {
+      "sha512": "xBhDMX0/UzayKye6dSdxKNtKYswsWc7SRT6TqoZYH2YLERiFpepyIPSzoWXzSXxNvvcvKqRk3VBqWBvUJn0m4A==",
+      "type": "package",
+      "path": "syncfusion.blazor.navigations/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Syncfusion.Blazor.Navigations.props",
+        "buildMultiTargeting/Syncfusion.Blazor.Navigations.props",
+        "buildTransitive/Syncfusion.Blazor.Navigations.props",
+        "lib/net5.0/Syncfusion.Blazor.Navigations.dll",
+        "lib/net5.0/Syncfusion.Blazor.Navigations.xml",
+        "lib/net6.0/Syncfusion.Blazor.Navigations.dll",
+        "lib/net6.0/Syncfusion.Blazor.Navigations.xml",
+        "lib/netstandard2.1/Syncfusion.Blazor.Navigations.dll",
+        "lib/netstandard2.1/Syncfusion.Blazor.Navigations.xml",
+        "staticwebassets/scripts/navigationsbase-dc8eab.min.js",
+        "staticwebassets/scripts/sf-accordion-dc8eab.min.js",
+        "staticwebassets/scripts/sf-breadcrumb-dc8eab.min.js",
+        "staticwebassets/scripts/sf-contextmenu-dc8eab.min.js",
+        "staticwebassets/scripts/sf-menu-dc8eab.min.js",
+        "staticwebassets/scripts/sf-sidebar-dc8eab.min.js",
+        "staticwebassets/scripts/sf-tab-dc8eab.min.js",
+        "staticwebassets/scripts/sf-toolbar-dc8eab.min.js",
+        "staticwebassets/scripts/sf-treeview-dc8eab.min.js",
+        "syncfusion.blazor.navigations.20.1.0.50.nupkg.sha512",
+        "syncfusion.blazor.navigations.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -1080,6 +1383,23 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.ExcelExport.Net.Core/20.1.0.50": {
+      "sha512": "eg/E/H8bKryV9rv+fn/M6zwcvSzNsjSRBwSDXI1wrxEU/rc8lGT3SAtEnujB87OJQL/LOwdsldogEPVJ9jTKNA==",
+      "type": "package",
+      "path": "syncfusion.excelexport.net.core/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net5.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/net5.0/Syncfusion.ExcelExport.Net.xml",
+        "lib/netstandard2.0/Syncfusion.ExcelExport.Net.dll",
+        "lib/netstandard2.0/Syncfusion.ExcelExport.Net.xml",
+        "syncfusion.excelexport.net.core.20.1.0.50.nupkg.sha512",
+        "syncfusion.excelexport.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Licensing/20.1.0.50": {
       "sha512": "sQBaysAP2fQ0ISeJjowl7wpiLjAwTUKxvQrft+QYTtjYbaUSxfoEh7tYi2/Pgs8qnGIrp+6PzIALI9bcVFPflw==",
       "type": "package",
@@ -1109,6 +1429,23 @@
         "lib/uap10.0/Syncfusion.Licensing.dll",
         "syncfusion.licensing.20.1.0.50.nupkg.sha512",
         "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.PdfExport.Net.Core/20.1.0.50": {
+      "sha512": "0p4Our3I0WUbObcbQbUlwvsxsJADh5piHg/7Nt4bl9EusSNivKr3ZNfUNml1ffc73N3wh/37RVCQziA+EG+TAQ==",
+      "type": "package",
+      "path": "syncfusion.pdfexport.net.core/20.1.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net5.0/Syncfusion.PdfExport.Net.dll",
+        "lib/net5.0/Syncfusion.PdfExport.Net.xml",
+        "lib/netstandard2.0/Syncfusion.PdfExport.Net.dll",
+        "lib/netstandard2.0/Syncfusion.PdfExport.Net.xml",
+        "syncfusion.pdfexport.net.core.20.1.0.50.nupkg.sha512",
+        "syncfusion.pdfexport.net.core.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -1249,7 +1586,9 @@
       "Syncfusion.Blazor.Buttons >= 20.1.0.50",
       "Syncfusion.Blazor.Calendars >= 20.1.0.50",
       "Syncfusion.Blazor.DropDowns >= 20.1.0.50",
+      "Syncfusion.Blazor.Grid >= 20.1.0.50",
       "Syncfusion.Blazor.Inputs >= 20.1.0.50",
+      "Syncfusion.Blazor.Navigations >= 20.1.0.50",
       "Syncfusion.Blazor.Themes >= 20.1.0.50"
     ]
   },
@@ -1304,7 +1643,15 @@
             "target": "Package",
             "version": "[20.1.0.50, )"
           },
+          "Syncfusion.Blazor.Grid": {
+            "target": "Package",
+            "version": "[20.1.0.50, )"
+          },
           "Syncfusion.Blazor.Inputs": {
+            "target": "Package",
+            "version": "[20.1.0.50, )"
+          },
+          "Syncfusion.Blazor.Navigations": {
             "target": "Package",
             "version": "[20.1.0.50, )"
           },

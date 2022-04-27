@@ -1,109 +1,357 @@
 ﻿@page "/"
 @using Syncfusion.Blazor.Calendars
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Spinner
 
-<div class="row">
-  <div class="column">
-      <div class="flex-container 1">
+<div class="container-fluid">
+    <div class="row">
+        <SfMenu TValue="MenuItem">
+            <MenuItems>
+                <MenuItem Text="File">
+                    <MenuItems>
+                        <MenuItem Text="Open"></MenuItem>
+                        <MenuItem Text="Save"></MenuItem>
+                        <MenuItem Text="Exit"></MenuItem>
+                    </MenuItems>
+                </MenuItem>
+                <MenuItem Text="Edit">
+                    <MenuItems>
+                        <MenuItem Text="Cut"></MenuItem>
+                        <MenuItem Text="Copy"></MenuItem>
+                        <MenuItem Text="Paste"></MenuItem>
+                    </MenuItems>
+                </MenuItem>
+                <MenuItem Text="View">
+                    <MenuItems>
+                        <MenuItem Text="Toolbars"></MenuItem>
+                        <MenuItem Text="Zoomr"></MenuItem>
+                        <MenuItem Text="Full Screen"></MenuItem>
+                    </MenuItems>
+                </MenuItem>
+                <MenuItem Text="Tools">
+                    <MenuItems>
+                        <MenuItem Text="Spelling & Grammar"></MenuItem>
+                        <MenuItem Text="Customize"></MenuItem>
+                        <MenuItem Text="Options"></MenuItem>
+                    </MenuItems>
+                </MenuItem>
+                <MenuItem Text="Go"></MenuItem>
+                <MenuItem Text="Help"></MenuItem>
+            </MenuItems>
+        </SfMenu>
+    </div>
+    <br />
+    <div class="row gx-5 gy-5">
+        <div class="col-xl-8">
+            <form>
+                <div class="form-group row">
+                    <div class="form-group col-md-2">
+                        <label>Дата начала</label>
+                        <SfDatePicker TValue="DateTime?" Placeholder="Choose a Date"> </SfDatePicker>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Дата конца</label>
+                        <SfDatePicker TValue="DateTime?" Placeholder="Choose a Date"> </SfDatePicker>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Yслуга</label>
+                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Kлиент</label>
+                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Tочика</label>
+                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>полициатели</label>
+                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="form-group col-md-2">
+                        <SfCheckBox TChecked="bool" Label="с субдилерами" Checked="false"></SfCheckBox>
+                        <SfCheckBox TChecked="bool" Label="с точностью до часа" Checked="false"></SfCheckBox>
+                        <SfCheckBox TChecked="bool" Label="разб. дату конца " Checked="false"></SfCheckBox>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>статус</label>
+                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Id/Number/Account платежа</label>
+                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
+                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <SfCheckBox TChecked="bool" Label="по времени статуса" Checked="false"></SfCheckBox>
 
-    <div class="flex-child unu">
-    <label>Дата начала</label>
-    <SfDatePicker TValue="DateTime?" Placeholder="Choose a Date" > </SfDatePicker>
+                        <SfCheckBox TChecked="bool" Label="не выгружать атрибуты" Checked="false"></SfCheckBox>
+
+                        <SfCheckBox TChecked="bool" Label="по типу платежа" Checked="false"></SfCheckBox>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <form>
+                <div class="form-row" align="center">
+                    <div class="col-auto">
+                        <label>тип поиска</label>
+                        <SfDropDownList Width="200px" TItem="ErrorModel" TValue="string" PopupHeight="230px" Index=2>
+                            <DropDownListFieldSettings Value="RequestId"></DropDownListFieldSettings>
+                        </SfDropDownList>
+                    </div>
+                    <div class="col-auto">
+                        <br />
+                        <SfCheckBox TChecked="bool" Label="в новом окне" Checked="false"></SfCheckBox>
+                        <SfButton Content="установить"></SfButton>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="container">
+            <SfGrid DataSource="@Orders" EnableHeaderFocus="true" AllowSelection="true" AllowSorting="true" AllowFiltering="true" EnableVirtualization="true" EnableHover="false" Height="650" RowHeight="38">
+                <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
+                <GridPageSettings PageSize="3000"></GridPageSettings>
+                <GridSelectionSettings CheckboxOnly="true" PersistSelection="true"></GridSelectionSettings>
+                <GridColumns>
+                    <GridColumn Field=@nameof(Order.Account) HeaderText="Account" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Total) HeaderText="Total" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Serial) HeaderText="Serial" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Number) HeaderText="Number" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Value) HeaderText="Value" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Balance) HeaderText="Balance" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Amount) HeaderText="Amount" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.ClientId) HeaderText="ClientId" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.FullState) HeaderText="FullState" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.StateTime) HeaderText="StateTime" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                </GridColumns>
+            </SfGrid>
+        </div>
+    </div>
+    <div class="row bottom-down">
+        <label>info info info info info info info info</label>
+        <label>info info info info info info info info</label>
+    </div>
 </div>
-
-<div class="flex-child doi">
-    <label>Дата конца</label>
-    <SfDatePicker TValue="DateTime?" Placeholder="Choose a Date" > </SfDatePicker>
-</div>
-
-<div class="flex-child trei">
-    <label>Yслуга</label>
-    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
-    </SfComboBox>
-</div>
-
-<div class="flex-child patru">
-    <SfCheckBox TChecked="bool"  Label="с субдилерами" Checked="false"></SfCheckBox>
-</div>
-
-<div class="flex-child cinci">
-    <label>точика</label>
-    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
-    </SfComboBox>
-</div>
-
-<div class="flex-child sase">
-    <label>полициатели</label>
-    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
-    </SfComboBox>
-</div>
-
-</div>
-
-<div class="flex-container 2">
-
-<div class="flex-child sapte">
-    <SfCheckBox TChecked="bool"  Label="с точностью до часа" Checked="false"></SfCheckBox>
-    <SfCheckBox TChecked="bool"  Label="разб. дату конца " Checked="false"></SfCheckBox>
-</div>
-
-<div class="flex-child opt">
-    <label>статус</label>
-    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
-    </SfComboBox>
-</div>
-
-<div class="flex-child noua">
-    <label>Id/Number/Account платежа</label>
-    <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-        <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
-    </SfComboBox>
-</div>
-
-<div class="flex-child zece">
-    <SfCheckBox TChecked="bool"  Label="по времени статуса" Checked="false"></SfCheckBox>
-
-    <SfCheckBox TChecked="bool"  Label="не выгружать атрибуты" Checked="false"></SfCheckBox>
-
-    <SfCheckBox TChecked="bool"  Label="по типу платежа" Checked="false"></SfCheckBox>
-</div>
-</div>
-  </div>
-  <div class="column"></div>
-</div>
-
-
 
 
 <style>
+    .form-group row {
+        min-width: 1300px;
+    }
 
-    .row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-    .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.flex-child {
-    flex: 1;
-    margin-left: 20px;
-}  
-
-.flex-child:first-child {
-    margin-right: 20px;
-}
-
-.flex-child:last-child {
-    margin-right: 20px;
-}
+    .bottom-down {
+        background: grey;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 
 </style>
+
+@code {
+
+    SfGrid<ErrorModel> DataGrid1 { get; set; }
+    /// <summary>
+    /// Event for Toolbar click for Grid Exporting
+    /// </summary>
+    public void GridToolbarClick1(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+    {
+        if (args.Item.Id == "Grid2_excelexport")
+        {
+            this.DataGrid1.ExcelExport();
+        }
+        if (args.Item.Id == "Grid2_pdfexport")
+        {
+            this.DataGrid1.PdfExport();
+        }
+        if (args.Item.Id == "Grid2_csvexport")
+        {
+            this.DataGrid1.CsvExport();
+        }
+    }
+
+
+
+    public List<MenuItem> MenuItems = new List<MenuItem>
+    {
+        new MenuItem
+        {
+            Text = "@*Add Parent Menu Item Text here*@",
+            Items = new List<MenuItem>
+            {
+                new MenuItem{ Text= "" }@*Add Child Menu Item Text in Text field*@,
+                new MenuItem{ Text= "" }@*Add Child Menu Item Text in Text field*@
+            }
+        },
+        new MenuItem{ Text = "" }@*Add Parent Menu Item Text in Text field*@,
+        new MenuItem{ Text = "" }@*Add Parent Menu Item Text in Text field*@
+    }; @* Add More required Parent/Child menu itmes here like above *@
+
+    ////public List<Payment> GridData { get; set; }
+    //public int Value { get; set; } = 1000;
+    //SfSpinner SpinnerObj;
+    //private string login;
+    //private string token;
+
+    //public class DDData
+    //{
+    //    public string Text { get; set; }
+    //    public string Value { get; set; }
+    //}
+    //public List<DDData> DLData = new List<DDData>() {
+    //    new DDData(){ Text= "1,000 Rows and 11 Columns", Value= "1000" },
+    //    new DDData(){ Text= "10,000 Rows and 11 Columns", Value= "10000" },
+    //    new DDData(){ Text= "1,00,000 Rows and 11 Columns", Value= "100000" },
+    //};
+    //private int? index { get; set; } = 0;
+    //private int? PreviousIndex { get; set; } = 0;
+    //private async System.Threading.Tasks.Task DropdownClose(@Syncfusion.Blazor.DropDowns.ClosedEventArgs args)
+    //{
+    //    if (PreviousIndex != index)
+    //    {
+    //        //GridData = OverviewData.GetAllRecords(Value);
+    //        await SpinnerObj.HideAsync();
+    //        PreviousIndex = index;
+    //    }
+    //}
+    //public async System.Threading.Tasks.Task Changedata(@Syncfusion.Blazor.DropDowns.ChangeEventArgs<string, DDData> args)
+    //{
+    //    if (PreviousIndex != index)
+    //    {
+    //        await SpinnerObj.ShowAsync();
+    //    }
+    //    Value = Int32.Parse(args.Value);
+    //}
+
+    public List<Order> Orders { get; set; }
+
+    //protected override async System.Threading.Tasks.Task OnInitializedAsync()
+    //{
+    //    login = await pls.GetAsync<string>("login");
+    //    token = await pls.GetAsync<string>("token");
+    //    //ForecastService.token = token;
+    //    PaymentsFilter pf = new PaymentsFilter();
+    //    //pf.ByTime = true;
+    //    pf.ByTime = false;
+    //    //pf.ServiceID = new Guid("d4625bff-021b-4deb-8d98-dde52c2a340c");
+    //    //pf.StartTime = new DateTime(2021, 2, 1);
+    //    //pf.EndTime = new DateTime(2021, 2, 1);
+    //    //pf.ByStateTime = true;
+    //    pf.NoAttributes = true;
+    //    pf.PaymentNumber = "11377614260395637815";
+
+    //    ForecastService.token = token;
+    //    payments = await ForecastService.GetPayments(pf);
+    //    Orders = new List<Order>();
+    //    foreach (JObject item in payments.Children())
+    //    {
+    //        var itemProperties = item.Children<JProperty>();
+    //        ////    .Id, x.Number, x.ClientId, x.ServiceId, x.Account, x.Total, x.Value, x.Amount, x.Balance, x.Serial, x.StateTime, x.FullState
+
+    //        //Order order = new Order();
+    //        //if(itemProperties.FirstOrDefault(x => x.Name == "Id").Value != null) {
+    //        //    order.Id = (string)itemProperties.FirstOrDefault(x => x.Name == "Id").Value;
+    //        //}
+    //        //if (itemProperties.FirstOrDefault(x => x.Name == "ClientId").Value != null)
+    //        //{
+    //        //    order.Id = (string)itemProperties.FirstOrDefault(x => x.Name == "ClientId").Value;
+    //        //}
+    //        //if (itemProperties.FirstOrDefault(x => x.Name == "ServiceId").Value != null)
+    //        //{
+    //        //    order.Id = (string)itemProperties.FirstOrDefault(x => x.Name == "ServiceId").Value;
+    //        //}
+    //        //Orders.Add(order);
+
+    //        Orders.Add(
+    //            new Order(
+    //            itemProperties.FirstOrDefault(x => x.Name == "Id").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "ClientId").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "ServiceId").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Number").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Account").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Serial").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Total").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Value").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Amount").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "Balance").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "StateTime").Value.ToString(),
+    //            itemProperties.FirstOrDefault(x => x.Name == "FullState").Value.ToString()
+    //            ));
+
+    //    }
+
+    //    //Orders = Enumerable.Range(1, 5).Select(x => new Order()
+    //    //{
+    //    //    OrderID = 0 + x,
+    //    //    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+    //    //}).ToList();
+
+    //    //GridData = ForecastService.GetPayments2(pf);
+    //}
+
+    //protected override void OnInitialized()
+    //{
+    //    Orders = Enumerable.Range(1, 75).Select(x => new Order()
+    //    {
+    //        OrderID = 1000 + x,
+    //        CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)]
+    //    }).ToList();
+    //}
+
+    public class Order
+    {
+        public Order() { }
+        public Order(string id, string ClientId, string ServiceId, string Number, string Account, string Serial,
+                                                                   string Total, string Value, string Amount, string Balance, string StateTime, string FullState)
+        {
+            this.Id = id;
+            this.ClientId = ClientId;
+            this.ServiceId = ServiceId;
+            this.Number = Number;
+            this.StateTime = StateTime;
+            this.Total = Total;
+            this.Serial = Serial;
+            this.Value = Value;
+
+            this.Account = Account;
+            this.Balance = Balance;
+            this.FullState = FullState;
+            this.Amount = Amount;
+        }
+
+        public string Id { get; set; }
+        public string ClientId { get; set; }
+        public string ServiceId { get; set; }
+        public string Number { get; set; }
+        public string Account { get; set; }
+        public string Serial { get; set; }
+        public string Total { get; set; }
+        public string Value { get; set; }
+        public string Amount { get; set; }
+        public string Balance { get; set; }
+        public string StateTime { get; set; }
+        public string FullState { get; set; }
+    }
+}
