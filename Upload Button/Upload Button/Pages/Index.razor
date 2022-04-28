@@ -3,46 +3,70 @@
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor.Navigations
 @using Syncfusion.Blazor.Spinner
+@using System.Collections.Generic
 
 <div class="container-fluid">
     <div class="row">
         <SfMenu TValue="MenuItem">
             <MenuItems>
-                <MenuItem Text="File">
+                <MenuItem Text="Команды">
                     <MenuItems>
-                        <MenuItem Text="Open"></MenuItem>
-                        <MenuItem Text="Save"></MenuItem>
-                        <MenuItem Text="Exit"></MenuItem>
+                        <MenuItem Text="Создать платеж"></MenuItem>
+                        <MenuItem Text="Создать заявку о замятии"></MenuItem>
+                        <MenuItem Text="Склейка платежей"></MenuItem>
+                        <MenuItem Text="Сверка при инкассации"></MenuItem>
+                        <MenuItem Text="Отправить реестр"></MenuItem>
+                        <MenuItem Text="Тарифные планы"></MenuItem>
+                        <MenuItem Text="Создать проводку"></MenuItem>
+                        <MenuItem Text="Отчеты"></MenuItem>
+
                     </MenuItems>
                 </MenuItem>
-                <MenuItem Text="Edit">
+                <MenuItem Text="Фильтр">
                     <MenuItems>
-                        <MenuItem Text="Cut"></MenuItem>
-                        <MenuItem Text="Copy"></MenuItem>
-                        <MenuItem Text="Paste"></MenuItem>
+                        <MenuItem Text="Сбросить фильтр"></MenuItem>
+                        <MenuItem Text="Установить"></MenuItem>
+                        <MenuItem Text="По статусам"></MenuItem>
+                        <MenuItem Text="Проблемные платежи"></MenuItem>
+                        <MenuItem Text="Платежи в нефинальных статусах"></MenuItem>
                     </MenuItems>
                 </MenuItem>
-                <MenuItem Text="View">
+                <MenuItem Text="Платежи">
                     <MenuItems>
-                        <MenuItem Text="Toolbars"></MenuItem>
-                        <MenuItem Text="Zoomr"></MenuItem>
-                        <MenuItem Text="Full Screen"></MenuItem>
+                        <MenuItem Text="Выгрузить в xls"></MenuItem>
+                        <MenuItem Text="Информация о платеже"></MenuItem>
+                        <MenuItem Text="Открыть родительские платежи"></MenuItem>
+                        <MenuItem Text="[MMPS] Отозвать"></MenuItem>
+                        <MenuItem Text="Использовать сдачу с чека."></MenuItem>
+                        <MenuItem Text="[MMPS] Отправить в обработку"></MenuItem>
+                        <MenuItem Text="Распечать чек"></MenuItem>
+                        <MenuItem Text="[MMPS]: Выдать деньги из кассы"></MenuItem>
+                        <MenuItem Text="Проверка номера и пароля"></MenuItem>
+                        <MenuItem Text="[MMPS] Сброс на сдачу"></MenuItem>
+                        <MenuItem Text="[MMPS) Создать пересортицу"></MenuItem>
+                        <MenuItem Text="[MMPS) Создать заявку о замятии"></MenuItem>
+                        <MenuItem Text="[MMPS] Повысить лимит точке"></MenuItem>
+                        <MenuItem Text="[MMPS] Обнулить платеж"></MenuItem>
+                        <MenuItem Text="[MMPS] Лог платежа"></MenuItem>
+                        <MenuItem Text="Закрыть окно (Pays Moldcell 27.04.2022 ]"></MenuItem>
+                        <MenuItem Text="Отчет"></MenuItem>
                     </MenuItems>
                 </MenuItem>
-                <MenuItem Text="Tools">
+                <MenuItem Text="Справка">
                     <MenuItems>
-                        <MenuItem Text="Spelling & Grammar"></MenuItem>
-                        <MenuItem Text="Customize"></MenuItem>
-                        <MenuItem Text="Options"></MenuItem>
+                        <MenuItem Text="Помощь F1"></MenuItem>
+                        <MenuItem Text="Получатели"></MenuItem>
+                        <MenuItem Text="Клиенты"></MenuItem>
+                        <MenuItem Text="Настройки"></MenuItem>
+                        <MenuItem Text="Конфиг"></MenuItem>
+                        <MenuItem Text="О программе F2"></MenuItem>
                     </MenuItems>
                 </MenuItem>
-                <MenuItem Text="Go"></MenuItem>
-                <MenuItem Text="Help"></MenuItem>
             </MenuItems>
         </SfMenu>
     </div>
     <br />
-    <div class="row gx-5 gy-5">
+    <div class="row gx-5 gy-5 ">
         <div class="col-xl-8">
             <form>
                 <div class="form-group row">
@@ -56,26 +80,30 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label>Yслуга</label>
-                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        <SfComboBox TValue="string" TItem="GameFields" AllowFiltering=true DataSource="@Games">
+                            <ComboBoxEvents TValue="string" TItem="GameFields" ValueChange="OnChange" />
+                            <ComboBoxFieldSettings Text="Text" Value="ID" />
                         </SfComboBox>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Kлиент</label>
-                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        <SfComboBox TValue="string" TItem="GameFields" AllowFiltering=true DataSource="@Games">
+                            <ComboBoxEvents TValue="string" TItem="GameFields" ValueChange="OnChange" />
+                            <ComboBoxFieldSettings Text="Text" Value="ID" />
                         </SfComboBox>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Tочика</label>
-                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        <SfComboBox TValue="string" TItem="GameFields" AllowFiltering=true DataSource="@Games">
+                            <ComboBoxEvents TValue="string" TItem="GameFields" ValueChange="OnChange" />
+                            <ComboBoxFieldSettings Text="Text" Value="ID" />
                         </SfComboBox>
                     </div>
                     <div class="form-group col-md-2">
                         <label>полициатели</label>
-                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        <SfComboBox TValue="string" TItem="GameFields" AllowFiltering=true DataSource="@Games">
+                            <ComboBoxEvents TValue="string" TItem="GameFields" ValueChange="OnChange" />
+                            <ComboBoxFieldSettings Text="Text" Value="ID" />
                         </SfComboBox>
                     </div>
                 </div>
@@ -87,14 +115,16 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label>статус</label>
-                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        <SfComboBox TValue="string" TItem="GameFields" AllowFiltering=true DataSource="@Games">
+                            <ComboBoxEvents TValue="string" TItem="GameFields" ValueChange="OnChange" />
+                            <ComboBoxFieldSettings Text="Text" Value="ID" />
                         </SfComboBox>
                     </div>
                     <div class="form-group col-md-4">
                         <label>Id/Number/Account платежа</label>
-                        <SfComboBox TValue="string" TItem="ErrorModel" AllowFiltering=true>
-                            <ComboBoxFieldSettings Value="RequestId"></ComboBoxFieldSettings>
+                        <SfComboBox TValue="string" TItem="GameFields" AllowFiltering=true DataSource="@Games">
+                            <ComboBoxEvents TValue="string" TItem="GameFields" ValueChange="OnChange" />
+                            <ComboBoxFieldSettings Text="Text" Value="ID" />
                         </SfComboBox>
                     </div>
                     <div class="form-group col-md-2">
@@ -112,8 +142,9 @@
                 <div class="form-row" align="center">
                     <div class="col-auto">
                         <label>тип поиска</label>
-                        <SfDropDownList Width="200px" TItem="ErrorModel" TValue="string" PopupHeight="230px" Index=2>
-                            <DropDownListFieldSettings Value="RequestId"></DropDownListFieldSettings>
+                        <SfDropDownList Width="200px" TItem="GameFields" TValue="string" PopupHeight="230px" Index=2 DataSource="@Games">
+                            <DropDownListEvents TItem="GameFields" TValue="string" />
+                            <DropDownListFieldSettings Text="Text" Value="ID" />
                         </SfDropDownList>
                     </div>
                     <div class="col-auto">
@@ -128,12 +159,13 @@
     <br />
     <div class="row">
         <div class="container">
-            <SfGrid DataSource="@Orders" AllowPaging="true">  <!--EnableHeaderFocus="true"  AllowSelection="true" AllowSorting="true" AllowFiltering="true" EnableVirtualization="true" EnableHover="false" Height="650" RowHeight="38"-->
-                <GridPageSettings PageSize="10"></GridPageSettings>
+            <SfGrid @ref="DefaultGrid" DataSource="@Orders" ContextMenuItems="@ElementContext" Height="800px">
+                <!--EnableHeaderFocus="true"  AllowSelection="true" AllowSorting="true" AllowFiltering="true" EnableVirtualization="true" EnableHover="false" Height="650" RowHeight="38"-->
+                <GridEditSettings AllowEditing="true" AllowDeleting="true"></GridEditSettings>
                 <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
                 <GridSelectionSettings CheckboxOnly="true" PersistSelection="true"></GridSelectionSettings>
                 <GridColumns>
-                    <GridColumn Field=@nameof(Order.Id) HeaderText="Id" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Id) HeaderText="Id" IsPrimaryKey="true" TextAlign="TextAlign.Right" Width="150"></GridColumn>
                     <GridColumn Field=@nameof(Order.ServiceId) HeaderText="service" TextAlign="TextAlign.Right" Width="150"></GridColumn>
                     <GridColumn Field=@nameof(Order.ClientId) HeaderText="Client Id" TextAlign="TextAlign.Right" Width="150"></GridColumn>
                     <GridColumn Field=@nameof(Order.Total) HeaderText="Total" TextAlign="TextAlign.Right" Width="150"></GridColumn>
@@ -155,8 +187,10 @@
     </div>
 </div>
 
-
 <style>
+
+    
+
     .form-group row {
         min-width: 1300px;
     }
@@ -164,28 +198,60 @@
 </style>
 
 @code {
-
-    SfGrid<ErrorModel> DataGrid1 { get; set; }
-    /// <summary>
-    /// Event for Toolbar click for Grid Exporting
-    /// </summary>
-    public void GridToolbarClick1(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+    public class GameFields
     {
-        if (args.Item.Id == "Grid2_excelexport")
-        {
-            this.DataGrid1.ExcelExport();
-        }
-        if (args.Item.Id == "Grid2_pdfexport")
-        {
-            this.DataGrid1.PdfExport();
-        }
-        if (args.Item.Id == "Grid2_csvexport")
-        {
-            this.DataGrid1.CsvExport();
-        }
+        public string ID { get; set; }
+        public string Text { get; set; }
+    }
+    public List<GameFields> Games = new List<GameFields>()
+{
+        new GameFields(){ ID= "Game1", Text= "American Football" },
+        new GameFields(){ ID= "Game2", Text= "Badminton" },
+        new GameFields(){ ID= "Game3", Text= "Basketball" },
+        new GameFields(){ ID= "Game4", Text= "Cricket" },
+        new GameFields(){ ID= "Game5", Text= "Football" },
+        new GameFields(){ ID= "Game6", Text= "Golf" },
+        new GameFields(){ ID= "Game7", Text= "Hockey" },
+        new GameFields(){ ID= "Game8", Text= "Rugby"},
+        new GameFields(){ ID= "Game9", Text= "Snooker" },
+        new GameFields(){ ID= "Game10", Text= "Tennis"}
+     };
+
+    public string ComboBoxValue = "Game3";
+    public string ChangeValue { get; set; } = "Basketball";
+    public void OnChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string, GameFields> args)
+    {
+        this.ChangeValue = args.ItemData?.Text;
     }
 
+    List<ContextMenuItemModel> ElementContext = new List<ContextMenuItemModel>(){
+        new ContextMenuItemModel { Text = "Информация о платеже", Target = ".e-content", Id = "1" },
+        new ContextMenuItemModel { Text = "Открыть родительские платежи", Target = ".e-content", Id = "2" },
+        new ContextMenuItemModel { Text = "[MMPS] Отозвать", Target = ".e-content", Id = "3" },
+        new ContextMenuItemModel { Text = "Использовать сдачу с чека.", Target = ".e-content", Id = "4" },
+        new ContextMenuItemModel { Text = "[MMPS] Отправить в обработку", Target = ".e-content", Id = "5" },
+        new ContextMenuItemModel { Text = "Распечать чек", Target = ".e-content", Id = "6" },
+        new ContextMenuItemModel { Text = "[MMPS]: Выдать деньги из кассы", Target = ".e-content", Id = "7" },
+        new ContextMenuItemModel { Text = "Проверка номера и пароля", Target = ".e-content", Id = "8" },
+        new ContextMenuItemModel { Text = "[MMPS] Сброс на сдачу", Target = ".e-content", Id = "9" },
+        new ContextMenuItemModel { Text = "[MMPS] Создать пересортицу", Target = ".e-content", Id = "10" },
+        new ContextMenuItemModel { Text = "[MMPS] Создать заявку о замятии", Target = ".e-content", Id = "11" },
+        new ContextMenuItemModel { Text = "[MMPS] Повысить лимит точке", Target = ".e-content", Id = "12" },
+        new ContextMenuItemModel { Text = "[MMPS] Обнулить платеж", Target = ".e-content", Id = "13" },
+        new ContextMenuItemModel { Text = "[MMPS] Лог платежа", Target = ".e-content", Id = "14" },
+        new ContextMenuItemModel { Text = "Закрыть окно [Pays Moldcell 27.04.2022 ]", Target = ".e-content", Id = "15" }};
 
+    //List<string> ElementContext = new List<string>(new string[] { "eu", "tu", "nu", "si ce ", "mare chestie" });
+
+    private SfGrid<Order> DefaultGrid;
+
+    public void OnContextMenuClick(ContextMenuClickEventArgs<Order> args)
+    {
+        if (args.Item.Id == "1")
+        {
+            this.DefaultGrid.StartEditAsync();
+        }
+    }
 
     public List<MenuItem> MenuItems = new List<MenuItem>
     {
@@ -194,113 +260,14 @@
             Text = "@*Add Parent Menu Item Text here*@",
             Items = new List<MenuItem>
             {
-                new MenuItem{ Text= "" }@*Add Child Menu Item Text in Text field*@,
+                new MenuItem{ Text= "" }
+    @*Add Child Menu Item Text in Text field*@,
                 new MenuItem{ Text= "" }@*Add Child Menu Item Text in Text field*@
             }
         },
         new MenuItem{ Text = "" }@*Add Parent Menu Item Text in Text field*@,
         new MenuItem{ Text = "" }@*Add Parent Menu Item Text in Text field*@
     }; @* Add More required Parent/Child menu itmes here like above *@
-
-    ////public List<Payment> GridData { get; set; }
-    //public int Value { get; set; } = 1000;
-    //SfSpinner SpinnerObj;
-    //private string login;
-    //private string token;
-
-    //public class DDData
-    //{
-    //    public string Text { get; set; }
-    //    public string Value { get; set; }
-    //}
-    //public List<DDData> DLData = new List<DDData>() {
-    //    new DDData(){ Text= "1,000 Rows and 11 Columns", Value= "1000" },
-    //    new DDData(){ Text= "10,000 Rows and 11 Columns", Value= "10000" },
-    //    new DDData(){ Text= "1,00,000 Rows and 11 Columns", Value= "100000" },
-    //};
-    //private int? index { get; set; } = 0;
-    //private int? PreviousIndex { get; set; } = 0;
-    //private async System.Threading.Tasks.Task DropdownClose(@Syncfusion.Blazor.DropDowns.ClosedEventArgs args)
-    //{
-    //    if (PreviousIndex != index)
-    //    {
-    //        //GridData = OverviewData.GetAllRecords(Value);
-    //        await SpinnerObj.HideAsync();
-    //        PreviousIndex = index;
-    //    }
-    //}
-    //public async System.Threading.Tasks.Task Changedata(@Syncfusion.Blazor.DropDowns.ChangeEventArgs<string, DDData> args)
-    //{
-    //    if (PreviousIndex != index)
-    //    {
-    //        await SpinnerObj.ShowAsync();
-    //    }
-    //    Value = Int32.Parse(args.Value);
-    //}
-
-    //protected override async System.Threading.Tasks.Task OnInitializedAsync()
-    //{
-    //    login = await pls.GetAsync<string>("login");
-    //    token = await pls.GetAsync<string>("token");
-    //    //ForecastService.token = token;
-    //    PaymentsFilter pf = new PaymentsFilter();
-    //    //pf.ByTime = true;
-    //    pf.ByTime = false;
-    //    //pf.ServiceID = new Guid("d4625bff-021b-4deb-8d98-dde52c2a340c");
-    //    //pf.StartTime = new DateTime(2021, 2, 1);
-    //    //pf.EndTime = new DateTime(2021, 2, 1);
-    //    //pf.ByStateTime = true;
-    //    pf.NoAttributes = true;
-    //    pf.PaymentNumber = "11377614260395637815";
-
-    //    ForecastService.token = token;
-    //    payments = await ForecastService.GetPayments(pf);
-    //    Orders = new List<Order>();
-    //    foreach (JObject item in payments.Children())
-    //    {
-    //        var itemProperties = item.Children<JProperty>();
-    //        ////    .Id, x.Number, x.ClientId, x.ServiceId, x.Account, x.Total, x.Value, x.Amount, x.Balance, x.Serial, x.StateTime, x.FullState
-
-    //        //Order order = new Order();
-    //        //if(itemProperties.FirstOrDefault(x => x.Name == "Id").Value != null) {
-    //        //    order.Id = (string)itemProperties.FirstOrDefault(x => x.Name == "Id").Value;
-    //        //}
-    //        //if (itemProperties.FirstOrDefault(x => x.Name == "ClientId").Value != null)
-    //        //{
-    //        //    order.Id = (string)itemProperties.FirstOrDefault(x => x.Name == "ClientId").Value;
-    //        //}
-    //        //if (itemProperties.FirstOrDefault(x => x.Name == "ServiceId").Value != null)
-    //        //{
-    //        //    order.Id = (string)itemProperties.FirstOrDefault(x => x.Name == "ServiceId").Value;
-    //        //}
-    //        //Orders.Add(order);
-
-    //        Orders.Add(
-    //            new Order(
-    //            itemProperties.FirstOrDefault(x => x.Name == "Id").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "ClientId").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "ServiceId").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Number").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Account").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Serial").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Total").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Value").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Amount").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "Balance").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "StateTime").Value.ToString(),
-    //            itemProperties.FirstOrDefault(x => x.Name == "FullState").Value.ToString()
-    //            ));
-
-    //    }
-
-    //    //Orders = Enumerable.Range(1, 5).Select(x => new Order()
-    //    //{
-    //    //    OrderID = 0 + x,
-    //    //    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
-    //    //}).ToList();
-
-    //    //GridData = ForecastService.GetPayments2(pf);
-    //}
 
     public List<Order> Orders { get; set; }
 
@@ -324,24 +291,6 @@
 
     public class Order
     {
-        //public Order() { }
-        //public Order(int id, string ClientId, string ServiceId, string Number, string Account, string Serial,
-        //                                                           string Total, string Value, string Amount, string Balance, string StateTime, string FullState)
-        //{
-        //    this.Id = id;
-        //    this.ClientId = ClientId;
-        //    this.ServiceId = ServiceId;
-        //    this.Number = Number;
-        //    this.StateTime = StateTime;
-        //    this.Total = Total;
-        //    this.Serial = Serial;
-        //    this.Value = Value;
-        //    this.Account = Account;
-        //    this.Balance = Balance;
-        //    this.FullState = FullState;
-        //    this.Amount = Amount;
-        //}
-
         public int Id { get; set; }
         public string ClientId { get; set; }
         public int ServiceId { get; set; }
