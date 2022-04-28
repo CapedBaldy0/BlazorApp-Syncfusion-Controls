@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "70N+0FH9IbLm7hFsYk0sk1tPFegra5fjCS0wLKZmB1A=",
+  "Hash": "F56G4EAyGr8hoYzFw117AhrQ+T3hPnx+GwfpcAeAefc=",
   "Source": "Upload Button",
   "BasePath": "_content/Upload Button",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Upload Button\\wwwroot",
       "Source": "Upload Button",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\Jojo\\.nuget\\packages\\syncfusion.blazor.themes\\20.1.0.50\\staticwebassets\\tailwind-dark.css"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Upload Button.styles.css",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Upload Button.styles.css",
       "SourceId": "Upload Button",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "Upload Button.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Upload Button.styles.css"
+      "OriginalItemSpec": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Upload Button.styles.css"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Upload Button.bundle.scp.css",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Upload Button.bundle.scp.css",
       "SourceId": "Upload Button",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "Upload Button.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Upload Button.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Upload Button.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\css\\site.css",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\favicon.ico",
       "SourceId": "Upload Button",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
+      "ContentRoot": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\wwwroot\\",
       "BasePath": "_content/Upload Button",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj": {}
+    "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj": {
+    "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj",
+        "projectUniqueName": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj",
         "projectName": "Upload Button",
-        "projectPath": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj",
+        "projectPath": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\Upload Button.csproj",
         "packagesPath": "C:\\Users\\Jojo\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Practice\\SyncfusionControls Test\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\",
+        "outputPath": "D:\\Work\\Practice\\BlazorApp-Syncfusion-Controls\\Upload Button\\Upload Button\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jojo\\AppData\\Roaming\\NuGet\\NuGet.Config",

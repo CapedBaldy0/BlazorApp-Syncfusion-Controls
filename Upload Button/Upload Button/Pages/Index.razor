@@ -128,12 +128,14 @@
     <br />
     <div class="row">
         <div class="container">
-            <SfGrid DataSource="@Orders" EnableHeaderFocus="true" AllowSelection="true" AllowSorting="true" AllowFiltering="true" EnableVirtualization="true" EnableHover="false" Height="650" RowHeight="38">
+            <SfGrid DataSource="@Orders" AllowPaging="true">  <!--EnableHeaderFocus="true"  AllowSelection="true" AllowSorting="true" AllowFiltering="true" EnableVirtualization="true" EnableHover="false" Height="650" RowHeight="38"-->
+                <GridPageSettings PageSize="10"></GridPageSettings>
                 <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
-                <GridPageSettings PageSize="3000"></GridPageSettings>
                 <GridSelectionSettings CheckboxOnly="true" PersistSelection="true"></GridSelectionSettings>
                 <GridColumns>
-                    <GridColumn Field=@nameof(Order.Account) HeaderText="Account" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.Id) HeaderText="Id" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.ServiceId) HeaderText="service" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(Order.ClientId) HeaderText="Client Id" TextAlign="TextAlign.Right" Width="150"></GridColumn>
                     <GridColumn Field=@nameof(Order.Total) HeaderText="Total" TextAlign="TextAlign.Right" Width="150"></GridColumn>
                     <GridColumn Field=@nameof(Order.Serial) HeaderText="Serial" TextAlign="TextAlign.Right" Width="150"></GridColumn>
                     <GridColumn Field=@nameof(Order.Number) HeaderText="Number" TextAlign="TextAlign.Right" Width="150"></GridColumn>
@@ -157,15 +159,6 @@
 <style>
     .form-group row {
         min-width: 1300px;
-    }
-
-    .bottom-down {
-        background: grey;
-        position: fixed;
-        z-index: 100;
-        bottom: 0;
-        left: 0;
-        width: 100%;
     }
 
 </style>
@@ -245,8 +238,6 @@
     //    Value = Int32.Parse(args.Value);
     //}
 
-    public List<Order> Orders { get; set; }
-
     //protected override async System.Threading.Tasks.Task OnInitializedAsync()
     //{
     //    login = await pls.GetAsync<string>("login");
@@ -311,47 +302,57 @@
     //    //GridData = ForecastService.GetPayments2(pf);
     //}
 
-    //protected override void OnInitialized()
-    //{
-    //    Orders = Enumerable.Range(1, 75).Select(x => new Order()
-    //    {
-    //        OrderID = 1000 + x,
-    //        CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)]
-    //    }).ToList();
-    //}
+    public List<Order> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = Enumerable.Range(1, 75).Select(x => new Order()
+            {
+                Id = 1000 + x,
+                ClientId = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                ServiceId = 1000 + x,
+                Number = 10000 + x,
+                Serial = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                Total = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                Value = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                Amount = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                Balance = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                StateTime = DateTime.Now.AddDays(-x),
+                FullState = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)]
+            }).ToList();
+    }
 
     public class Order
     {
-        public Order() { }
-        public Order(string id, string ClientId, string ServiceId, string Number, string Account, string Serial,
-                                                                   string Total, string Value, string Amount, string Balance, string StateTime, string FullState)
-        {
-            this.Id = id;
-            this.ClientId = ClientId;
-            this.ServiceId = ServiceId;
-            this.Number = Number;
-            this.StateTime = StateTime;
-            this.Total = Total;
-            this.Serial = Serial;
-            this.Value = Value;
+        //public Order() { }
+        //public Order(int id, string ClientId, string ServiceId, string Number, string Account, string Serial,
+        //                                                           string Total, string Value, string Amount, string Balance, string StateTime, string FullState)
+        //{
+        //    this.Id = id;
+        //    this.ClientId = ClientId;
+        //    this.ServiceId = ServiceId;
+        //    this.Number = Number;
+        //    this.StateTime = StateTime;
+        //    this.Total = Total;
+        //    this.Serial = Serial;
+        //    this.Value = Value;
+        //    this.Account = Account;
+        //    this.Balance = Balance;
+        //    this.FullState = FullState;
+        //    this.Amount = Amount;
+        //}
 
-            this.Account = Account;
-            this.Balance = Balance;
-            this.FullState = FullState;
-            this.Amount = Amount;
-        }
-
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string ClientId { get; set; }
-        public string ServiceId { get; set; }
-        public string Number { get; set; }
+        public int ServiceId { get; set; }
+        public int Number { get; set; }
         public string Account { get; set; }
         public string Serial { get; set; }
         public string Total { get; set; }
         public string Value { get; set; }
         public string Amount { get; set; }
         public string Balance { get; set; }
-        public string StateTime { get; set; }
+        public DateTime StateTime { get; set; }
         public string FullState { get; set; }
     }
 }
